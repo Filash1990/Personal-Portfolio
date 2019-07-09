@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+    <meta name="description" content="Filash's portfolio" />
+    <meta name="author" content="Filash" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <h1>Filash</h1>
+        <h3>Front-end Web Developer</h3>
+      </div>
+      <ul id="navigation" class="nav-links">
+        <li class="nav-link"><a href="#home">Home</a></li>
+        <li class="nav-link"><a href="#projects">Projects</a></li>
+        <li class="nav-link"><a href="#about-me">About me</a></li>
+        <li class="nav-link"><a href="#contacts">Contacts</a></li>
+      </ul>
+      <ul class="socials">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jose-filas-siuma-b71425189/"
+            target="_blank"
+            ><img src="linkedin.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/Filash1990?tab=projects" target="_blank"
+            ><img src="git.png"
+          /></a>
+        </li>
+      </ul>
+      <img class="burger" class="" src="burger.png" />
+    </nav>
+    <section class="section" id="home">
+      <div id="home-text">
+        <p id="white-text">Let's get <span id="swap-text">READY</span></p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="project-wrap">
+        <div class="screenshot" id="chef-web"></div>
+        <div class="project-description">
+          <p class="proj-caption">HTML/SASS/JQuery Chef Website</p>
+        </div>
+        <p>
+          <a href="#">Visit</a>
+          <a href="#">Git</a>
+        </p>
+      </div>
+      <div class="project-wrap">
+        <div class="screenshot" id="artistp"></div>
+        <div class="project-description">
+          <p class="proj-caption">HTML/CSS/JQuerry Artist Portfolio</p>
+        </div>
+        <p>
+          <a href="#">Visit</a>
+          <a href="#">Git</a>
+        </p>
+      </div>
+      <div class="project-wrap">
+        <div class="screenshot" id="hsapp"></div>
+        <div class="project-description">
+          <p class="proj-caption">
+            HTML/CSS/JS Trivia Game
+          </p>
+        </div>
+        <p>
+          <a href="#">Visit</a>
+          <a href="#">Git</a>
+        </p>
+      </div>
+      <div class="project-wrap">
+        <div class="screenshot" id="recipe"></div>
+        <div class="project-description">
+          <p class="proj-caption">React/CSS Recipe Finder App</p>
+        </div>
+        <p>
+          <a href="#">Visit</a>
+          <a href="#">Git</a>
+        </p>
+      </div>
+    </section>
+    <section class="section" id="about-me">
+      <div id="description">
+        <h2>About me</h2>
+        <p>
+          My name is Jose-Filas Siuma. I've been passionate about computers
+          since a kid, and in my studying years I chose to follow up this road.
+          While taking care my day job, which sharpened my soft skills and
+          team-play, programming was a way to relax while solving problems.
+          Improvements came with practice and eventualy my talents came handy
+          for freelancing jobs and personal interests. My hunger for knowledge
+          is what drives me to keep looking for challenges, and software
+          development never disappoints in terms of amount of things to learn.
+        </p>
+        <h2>Skills</h2>
+        <p>HTML/HTML5</p>
+        <p>CSS/CSS3/Bootstrap/SASS</p>
+        <p>JavaScript ES6/JQuery/React</p>
+        <h2>Curriculum Vitae</h2>
+        <p><a onclick="cvDisplay()">View</a></p>
+        <p><a href="#">Download</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div id="bye">
+        <h2>Contacts</h2>
+      </div>
+      <div id="contact-info">
+        <p><a href="mailto: filas1d@gmail.com">Email me</a></p>
+        <p><a href="tel:0037360925387">Phone me</a></p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/jose-filas-siuma-b71425189/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/Filash1990?tab=projects" target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <div id="modal" onclick="cvHide()"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

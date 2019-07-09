@@ -1,0 +1,246 @@
+/*global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+a:hover {
+  color: red;
+  transform: scale(1.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(60deg, #222529 0%, #142231 100%);
+}
+section {
+  min-height: 100vh;
+  border-top: solid red 1px;
+  padding-top: 90px;
+}
+
+/*nav*/
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  border-bottom: solid whitesmoke 1px;
+  background-color: rgb(9, 13, 14);
+  z-index: 9;
+}
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+nav ul li a,
+nav ul li a:visited {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: red;
+}
+.socials img {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+}
+.burger {
+  filter: invert(100%);
+  width: 30px;
+  display: none;
+}
+/*sections*/
+
+/*home*/
+/*flash words in sequence when the page loads "Creative, Logical, Innovative, Started etc*/
+#home {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home p {
+  font-size: 50px;
+  font-weight: bolder;
+}
+#swap-text {
+  font-size: 70px;
+  color: red;
+  cursor: pointer;
+}
+/*contacts*/
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contacts p {
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#contacts h2 {
+  font-size: 40px;
+  padding-bottom: 40px;
+  color: red;
+}
+#contact-info {
+  border: solid whitesmoke 1px;
+  width: 50%;
+  min-height: 50%;
+}
+/*about*/
+
+#description {
+  width: 90%;
+  margin: auto;
+}
+#description h2 {
+  font-size: 30px;
+  padding: 20px 0px;
+  color: red;
+}
+#description p {
+  font-size: 20px;
+  line-height: 28px;
+}
+#description p a {
+  cursor: pointer;
+}
+/*projects*/
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.screenshot {
+  width: 270px;
+  height: 150px;
+  background-color: white;
+  margin: auto;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+.screenshot:hover {
+  transform: scale(1.1);
+}
+.project-wrap p {
+  text-align: center;
+  padding-top: 10px;
+}
+.project-wrap p a {
+  padding: 10px 10px;
+}
+.project-description {
+  width: 90%;
+  margin: auto;
+}
+#chef-web {
+  background-image: url("lupo.jpg");
+}
+#artistp {
+  background-image: url("artistp.jpg");
+}
+#hsapp {
+  background-image: url("hsapp.jpg");
+}
+#recipe {
+  background-image: url("recipe.jpg");
+}
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-image: url("cv.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*media*/
+@media only screen and (max-width: 970px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 90px;
+    background-color: rgb(9, 13, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    transform: translatex(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-active {
+    transform: translateX(0%);
+    z-index: 10;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .burger {
+    display: block;
+  }
+  .socials {
+    display: none;
+  }
+  #logo h1 {
+    font-size: 30px;
+  }
+  #logo h3 {
+    font-size: 15px;
+  }
+  #home p {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  #swap-text {
+    font-size: 40px;
+  }
+  #description p {
+    font-size: 15px;
+  }
+}
